@@ -21,7 +21,7 @@
     <section class="todo">
       <div class="container">
         <div class="adding">
-          <label for="new-task">Add Item</label>
+          <label class="adding__label" for="new-task">Add Item</label>
           <div class="adding__wrapper">
             <div class="task">
               <input id="new-task" class="task__input" type="text">
@@ -29,7 +29,7 @@
             </div>
           </div>
         </div>
-        <h3>Todo</h3>
+        <h3 class="todo__title">Todo</h3>
         <ul class="task-list" id="incomplete-tasks">
           <li class="task-list__item">
             <div class="task">
@@ -42,7 +42,7 @@
               </button>
             </div>
           </li>
-          <li class="task-list__item task_edit-mode">
+          <li class="task-list__item">
             <div class="task task_edit-mode">
               <input class="task__checkbox" type="checkbox">
               <label class="task__label">Go Shopping</label>
@@ -54,8 +54,8 @@
             </div>
           </li>
         </ul>
-        <h3>Completed</h3>
-        <ul class="task-list" id="completed-tasks">
+        <h3 class="todo__title">Completed</h3>
+        <ul class="task-list task-list_completed" id="completed-tasks">
           <li class="task-list__item">
             <div class="task">
               <input class="task__checkbox" type="checkbox" checked>
