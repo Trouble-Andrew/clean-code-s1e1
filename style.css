@@ -6,21 +6,23 @@ body {
   font-family: Lato, sans-serif;
 }
 
-.container img {
-  width: 100%;
-}
-
-.container .more_inf {
-  display: block;
-  text-align: right;
-  font-family: fantasy, cursive;
-}
-
 .container {
   display: block;
   width: 500px;
   margin: 0 auto 0;
 }
+
+.container img {
+  width: 100%;
+}
+
+.hero .hero__link {
+  display: block;
+  text-align: right;
+  font-family: fantasy, cursive;
+}
+
+
 
 @media (max-width: 768px) {
 
@@ -40,7 +42,7 @@ body {
   flex-grow: 1;
 }
 
-.task-row-wrapper {
+.adding__wrapper {
   display: flex;
 }
 
@@ -86,7 +88,7 @@ label[for="new-task"] {
   text-transform: uppercase;
 }
 
-input[type="text"] {
+.task__input {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -98,7 +100,7 @@ input[type="text"] {
   font-family: Lato, sans-serif;
   color: #888888;
 }
-input[type="text"]:focus {
+.task__input:focus {
   color: #333333;
 }
 
@@ -139,7 +141,7 @@ li > label {
   width: 226px;
 }
 
-li > input[type="text"] {
+li > .task__input {
   width: 226px;
 }
 
@@ -161,15 +163,15 @@ ul#completed-tasks label {
 
 /* Edit Task */
 
-ul li input[type=text] {
+ul li .task__input {
   display: none;
 }
 
-ul li.editMode input[type=text] {
+ul li.task_edit-mode .task__input {
   display: inline-block;
   width: 224px;
 }
 
-ul li.editMode label {
+ul li.task_edit-mode label {
   display: none;
 }
