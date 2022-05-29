@@ -16,18 +16,16 @@ body {
   width: 100%;
 }
 
-.hero .hero__link {
+.hero__link {
   display: block;
   text-align: right;
   font-family: fantasy, cursive;
   margin-top: -3px;
 }
 
-
-
 @media (max-width: 768px) {
 
-  .aaa {
+  .hero__link {
     text-align: center;
   }
 
