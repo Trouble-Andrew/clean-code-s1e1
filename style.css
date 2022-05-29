@@ -30,6 +30,10 @@ body {
 
 }
 
+.adding {
+  margin: 1em 0;
+}
+
 .task {
   width: 56%;
   display: inline-block;
